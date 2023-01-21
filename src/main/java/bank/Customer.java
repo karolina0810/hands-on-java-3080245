@@ -1,20 +1,20 @@
 package bank;
 
 public class Customer {
-  
   private int id;
   private String name;
   private String username;
   private String password;
-  private String accountId;
+  private int accountId;
 
-  public Customer(int ID, String name, String usernam, String passowrd, int i) {
+  public Customer (int id, String name, String username, String password, int accountId) {
     setId(id);
     setName(name);
     setUsername(username);
     setPassword(password);
     setAccountId(accountId);
-    }
+  }
+
   public int getId() {
     return this.id;
   }
@@ -47,11 +47,11 @@ public class Customer {
     this.password = password;
   }
 
-  public String getAccountId() {
+  public int getAccountId() {
     return this.accountId;
   }
 
-  public void setAccountId(String accountId) {
+  public void setAccountId(int accountId) {
     this.accountId = accountId;
   }
 
