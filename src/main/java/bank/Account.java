@@ -1,11 +1,16 @@
 package bank;
 
-public class Accounts {
+public class Account {
   private int id;
   private String type;
-  private int balance;
+  private double balance;
 
+ public Account(int id, String type, double alance){
+  setId(id);
+  setType(type);
+  setBalance(balance);
 
+ }
   public int getId() {
     return this.id;
   }
@@ -22,12 +27,12 @@ public class Accounts {
     this.type = type;
   }
 
-  public int getBalance() {
+  public double getBalance() {
     return this.balance;
   }
 
-  public void setBalance(int balance) {
-    this.balance = balance;
+  public void setBalance(double balance2) {
+    this.balance = balance2;
   }
 
 }
